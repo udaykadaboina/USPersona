@@ -1,0 +1,29 @@
+sdk: "C:/Ruby192/lib/ruby/gems/1.9.1/gems/rhodes-3.2.3"
+sdkversion: 3.2.3
+name: USPersona
+version: 1.0
+vendor: rhomobile
+build: debug
+bbver: 4.6
+wmsdk: Windows Mobile 6 Professional SDK (ARMV4I)
+applog: rholog.txt
+iphone:
+  configuration: Release
+  sdk: iphonesimulator4.3
+  provisionprofile: 
+  codesignidentity: 
+  entitlements: 
+  BundleIdentifier: com.rhomobile.uspersona
+  BundleURLScheme: uspersona
+wp:
+  productid: 083654e0-e024-012e-4ebc-0026c7448ae1
+symbian:
+  uid: 3970823378
+extensions:
+  - json
+  - another-extension
+  - rhodes-translator
+android:
+  version: 2.1
+  capabilities:
+  - camera

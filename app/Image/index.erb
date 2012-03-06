@@ -1,0 +1,20 @@
+<div data-role="page">
+  <div class="pageTitle">
+    <h1>Image Capture</h1>
+  </div>
+  <div class="toolbar">
+    <div class="leftItem regularButton">
+      <a href="<%= Rho::RhoConfig.start_path %>">Home</a>
+    </div>
+  </div>
+  <div class = "content">
+    <%= link_to 'Choose Picture', { :action => :edit }%><br/>
+      <% if System::get_property('has_camera') %>
+      <%= link_to 'Capture', { :action => :new }%>
+      <% end %>
+      <br/>
+      <% @images.reverse_each do |x|%>
+      <img src="<%=Rho::RhoApplication::get_blob_path(x.image_uri)%>" width='300px'></img><a href="<%=url_for(:action => :delete, :id =>x.object)%>">Delete</a><br/>
+      <% end %>
+  </div>
+</div>

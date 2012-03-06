@@ -1,0 +1,6 @@
+rhodes_path='C:/Ruby192/lib/ruby/gems/1.9.1/gems/rhodes-3.2.3'
+app_name='USPersona'
+reload_app_changes=1
+debug_port=
+debug_host='127.0.0.1'
+ext_path=C:/Ruby192/lib/ruby/gems/1.9.1/gems/rhodes-3.2.3/lib/extensions/json;
